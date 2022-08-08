@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carmelo.example.HelloController">
+   <left>
+      <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+         <Button fx:id="btnFirst" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnFirstClick" text="First" />
+         <Button fx:id="btnSecond" maxWidth="1.7976931348623157E308" onAction="#onBtnSecondClick" text="Second" />
+         <Button fx:id="btnSecond1" layoutX="30.0" layoutY="176.0" maxWidth="1.7976931348623157E308" onAction="#onBtnCustomClick" text="Custom" />
+      </VBox>
+   </left>
+   <center>
+      <StackPane fx:id="viewPane" minHeight="320.0" minWidth="480.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
